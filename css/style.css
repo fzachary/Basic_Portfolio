@@ -1,0 +1,62 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}    
+
+body {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+hr {
+    margin: 5px;
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: #92c6f4;
+    overflow: auto;
+    border-radius: 10px;    
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/*Change the color of links on hover*/
+.topnav a:hover {
+    background-color: #333333;
+    color: #92c6f4;
+}
+
+.topnav-right {
+    float: right;
+}
+
+.active {
+    font-size: 48px;
+    margin: 0 auto;
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+}
+
+h1 {
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+img {
+    float: left;
+    padding: 15px;
+    margin:0 auto;
+}
+
+.main-text {
+    line-height: 24px;
+    
+}
