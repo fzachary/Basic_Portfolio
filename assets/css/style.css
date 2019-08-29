@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -77,6 +81,10 @@ nav a:hover {
     color: #81b6c5;
 }
 
+nav a::selection {
+    text-decoration: underline;
+}
+
 nav a:first-child {
     border-left: 0 none;
 }
@@ -110,6 +118,16 @@ nav a:first-child {
     float: right;
     border: 1px solid #dddddd;
     margin-bottom: 20px;
+    /* font-family: 'Merriweather', serif; */
+}
+
+.sidebar a {
+    color: #777777;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #81b6c5;
 }
 
 h3, .sidebar, h2 {
@@ -140,16 +158,23 @@ footer {
     clear: both;
     border-top: 8px solid #81b6c5;
     text-align: center;
-    padding: 30px 0 0 0;
-    font-size: 12px;
-    left: 0;
-    bottom: 0;
+    /* padding: 20px 0 0 0; */
+    font-size: 14px;
     width: 100%;
 }
 
-.container:last-child {
-    background: #666666;
+.footer {
+    height: 50px;
+    margin-top: -50px;
 }
+
+#footer-text {
+    padding-bottom: 0;
+}
+
+/* .container:last-child {
+    background: #666666;
+} */
 
 .work {
     float: left;
@@ -177,6 +202,12 @@ h3:hover {
     color: #666666;
 }
 
+h4 {
+    font-family: 'Merriweather', serif;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #cccccc;
+}
+
 #name, #email, #message {
     width: 100%;
     max-width: 960px;
@@ -187,7 +218,7 @@ h3:hover {
 }
 
 textarea {
-    height: 160px;
+    height: 180px;
 }
 
 #submit {
