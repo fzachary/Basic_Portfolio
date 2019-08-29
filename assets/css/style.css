@@ -209,6 +209,7 @@ h3 {
 
 h3:hover {
     color: #666666;
+    transition: all 0.5s ease;
 }
 
 h4 {
