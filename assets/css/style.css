@@ -55,11 +55,11 @@ h1 {
     line-height: 90px;
     text-decoration: none;
     color: #ffffff;
+    transition: 0.5s;
 }
 
 #bigname:hover {
     color: #666666;
-    transition: all 0.5s ease;
 }
 
 nav {
@@ -76,11 +76,11 @@ nav a {
     display: inline-block;
     padding-left: 15px;
     line-height: 18px;
+    transition: 0.5s;
 }
 
 nav a:hover {
     color: #81b6c5;
-    transition: all 0.5s ease;
 }
 
 nav a::selection {
@@ -133,11 +133,11 @@ nav a:first-child {
 .sidebar a {
     color: #777777;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .sidebar a:hover {
     color: #81b6c5;
-    transition: all 0.5s ease;
 }
 
 h3, .sidebar, h2 {
@@ -152,11 +152,11 @@ h3, .sidebar, h2 {
     height: 60px;
     margin-top: 8px;
     margin-right: 5px;
+    transition: 0.5s;
 }
 
 .social:hover {
     opacity: 0.5;
-    transition: all 0.5s ease;
 }
 
 .social:last-child {
@@ -205,11 +205,11 @@ h3 {
     padding-top: 5px;
     width: 100%;
     text-align: center;
+    transition: 0.5s;
 }
 
 h3:hover {
     color: #666666;
-    transition: all 0.5s ease;
 }
 
 h4 {
@@ -237,6 +237,7 @@ textarea {
     padding: 6px 19px 6px 19px;
     border: none;
     text-transform: lowercase;
+    transition: 0.5s;
 }
 
 #submit:hover {
