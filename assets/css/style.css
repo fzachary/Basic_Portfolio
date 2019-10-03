@@ -175,7 +175,7 @@ footer {
 
 .footer {
     height: 50px;
-    margin-top: -50px;
+    margin-top: -80px;
 }
 
 #footer-text {
@@ -184,13 +184,18 @@ footer {
 
 .work {
     float: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 22px;
     position: relative;
     max-width: 100%;
     height: auto;
     /* This above was a huge fix from online */
+}
+
+.auth-image {
+    max-width: 100%;
+    height: auto;
 }
 
 h3 {
