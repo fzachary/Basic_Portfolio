@@ -114,14 +114,6 @@ nav a:first-child {
     float: left;
 }
 
-/* p:first-letter{
-    display:block;
-    float:left;
-    margin:3px;
-    color:#81b6c5;
-    font-size:300%;
-} */
-
 .sidebar {
     background: #ffffff;
     padding: 25px;
@@ -258,6 +250,14 @@ textarea {
         width: 620px;
     }
 
+    .work:nth-child(3) {
+        margin-right: 15px;
+    }
+
+    .work:nth-child(5) {
+        margin-right: 15px;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -266,26 +266,60 @@ textarea {
     .work {
         max-width: 100%;
         height: auto;    
-}
+    }
+
+    .sidebar {
+        width: 620px;
+        float: left;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .footer {
+        flex-shrink: 0;
+        height: 50px;
+        margin-top: 50px;
+    }
+
+    #master-container h1 {
+        text-align: center;
+    }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
     .content-section {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         padding-bottom: 25px;
     }
 
     .sidebar {
         width: 100%;
+        max-width: 660px;
+        height: auto;
+        float: left;
+        margin-right: 0px;
+        text-align: center;
+    }
+
+    .work:nth-child(3) {
+        margin-right: 0;
+        margin-left: 13px;
+    }
+
+    .work:nth-child(5) {
+        margin-right: 0;
+        margin-left: 13px;
+    }
+
+    .footer {
+        flex-shrink: 0;
+        height: 50px;
+        margin-top: 50px;
     }
 }
 
 @media screen and (max-width: 640px) {
     .content-section {
-        width: 100%;
-    }
-
-    .sidebar {
         width: 100%;
     }
     
@@ -323,8 +357,32 @@ textarea {
         height: auto;
     }
 
+    .work:nth-child(3) {
+        margin-right: 0;
+        margin-left: 0px;
+    }
+
+    .work:nth-child(5) {
+        margin-right: 0;
+        margin-left: 0px;
+    }
+
     img {
         width: 100%;
         height: auto;
+        margin-right: 0px;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: 660px;
+        float: left;
+        text-align: center;
+    }
+
+    .footer {
+        flex-shrink: 0;
+        height: 50px;
+        margin-top: 50px;
     }
 }}
