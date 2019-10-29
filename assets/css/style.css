@@ -73,6 +73,7 @@ nav {
 
 nav a {
     color: #777777;
+    font-size: 24px;
     text-decoration: none;
     border-left: 1px solid #cccccc;
     margin-left: 15px;
@@ -190,7 +191,7 @@ footer {
 }
 
 .auth-image {
-    max-width: 100%;
+    max-width: 260px;
     height: auto;
 }
 
