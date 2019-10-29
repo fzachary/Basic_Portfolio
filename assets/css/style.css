@@ -58,7 +58,7 @@ h1 {
     line-height: 90px;
     text-decoration: none;
     color: #ffffff;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 #bigname:hover {
@@ -80,7 +80,7 @@ nav a {
     display: inline-block;
     padding-left: 15px;
     line-height: 18px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -99,7 +99,7 @@ nav a:first-child {
     padding: 25px;
     margin: 0 0 40px 0;
     width: 100%;
-    max-width: 660px;
+    max-width: 666px;
     float: left;
     background: #ffffff;
     margin-bottom: 88px;
@@ -129,7 +129,7 @@ nav a:first-child {
 .sidebar a {
     color: #777777;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .sidebar a:hover {
@@ -138,9 +138,7 @@ nav a:first-child {
 
 h3, .sidebar, h2 {
     border-bottom: 2px solid #eeeeee;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    line-height: 20px;
+    padding-bottom: 6px;
 }
 
 .social {
@@ -148,7 +146,7 @@ h3, .sidebar, h2 {
     height: 60px;
     margin-top: 8px;
     margin-right: 5px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .social:hover {
@@ -181,13 +179,24 @@ footer {
 
 .work {
     float: left;
-    margin-left: 22px;
-    margin-right: 22px;
-    margin-bottom: 22px;
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-bottom: 19px;
     position: relative;
     max-width: 100%;
     height: auto;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    border-color: #cccccc;
+    transition: 0.3s;
+    box-shadow: 4px 4px 4px slategrey;
     /* This above was a huge fix from online */
+}
+
+.work:hover {
+    
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .auth-image {
@@ -203,8 +212,8 @@ h3 {
     float: left;
     position: absolute;
     left: 0;
-    bottom: 5px;
-    padding-top: 5px;
+    bottom: 33px;
+    padding-top: 3px;
     width: 100%;
     text-align: center;
     transition: 0.5s;
@@ -216,8 +225,22 @@ h3:hover {
 
 h4 {
     font-family: 'Merriweather', serif;
-    padding-bottom: 25px;
-    border-bottom: 3px solid #cccccc;
+    font-size: smaller;
+    border-bottom: 1px solid #cccccc;
+    line-height: 210%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #81b6c5;
+    transition: 0.3s;
+    opacity: 1.0;
 }
 
 #name, #email, #message {
@@ -234,12 +257,14 @@ textarea {
 }
 
 #submit {
+    height: 45px;
+    width: 105px;
     background-color: #81b6c5;
     color: #ffffff;
     padding: 6px 19px 6px 19px;
     border: none;
     text-transform: lowercase;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 #submit:hover {
@@ -251,14 +276,6 @@ textarea {
         width: 620px;
     }
 
-    .work:nth-child(3) {
-        margin-right: 15px;
-    }
-
-    .work:nth-child(5) {
-        margin-right: 15px;
-    }
-
     img {
         max-width: 100%;
         height: auto;
@@ -267,6 +284,7 @@ textarea {
     .work {
         max-width: 100%;
         height: auto;    
+        box-shadow: 4px 4px 4px slategrey;
     }
 
     .sidebar {
@@ -287,6 +305,10 @@ textarea {
     }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
+    .mypicture {
+        width: 150px;
+    }
+    
     .content-section {
         width: 100%;
         height: auto;
@@ -302,14 +324,13 @@ textarea {
         text-align: center;
     }
 
-    .work:nth-child(3) {
-        margin-right: 0;
-        margin-left: 13px;
+    .work{
+        box-shadow: 4px 4px 4px slategrey;
     }
 
-    .work:nth-child(5) {
-        margin-right: 0;
-        margin-left: 13px;
+    #submit {
+        width: 33%;
+        height: 45px;
     }
 
     .footer {
@@ -320,8 +341,18 @@ textarea {
 }
 
 @media screen and (max-width: 640px) {
+    .mypicture {
+        width: 133px;
+    }
+
     .content-section {
         width: 100%;
+    }
+
+    .auth-image {
+        margin-top: 12px;
+        max-width: 100%;
+        height: auto;
     }
     
     #bigname {
@@ -353,19 +384,10 @@ textarea {
     }
 
     .work {
-        margin: 0 auto;
+        margin: 0 0 18px 0;
         width: 100%;
         height: auto;
-    }
-
-    .work:nth-child(3) {
-        margin-right: 0;
-        margin-left: 0px;
-    }
-
-    .work:nth-child(5) {
-        margin-right: 0;
-        margin-left: 0px;
+        box-shadow: 4px 4px 4px slategrey;
     }
 
     img {
@@ -379,6 +401,15 @@ textarea {
         max-width: 660px;
         float: left;
         text-align: center;
+    }
+
+    textarea {
+        max-height: 84px;
+    }
+
+    #submit {
+        width: 100%;
+        height: 45px;
     }
 
     .footer {
